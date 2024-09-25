@@ -7,10 +7,10 @@ public class App {
 	public static void main(String[] args) {
 		Ejercicios exercises = new Ejercicios();
 
-//		exercises.ejercicio1();
+		exercises.ejercicio1();
 //		exercises.ejercicio2();
 //		exercises.ejercicio3();
-		exercises.ejercicio4();
+//		exercises.ejercicio4();
 //		exercises.ejercicio5();
 //		exercises.ejercicio6();
 //		exercises.ejercicio7();
@@ -27,7 +27,6 @@ public class App {
 //		exercises.ejercicio18();
 //		exercises.ejercicio19();
 //		exercises.ejercicio20();
-
 	}
 
 }// FINAL CLASS

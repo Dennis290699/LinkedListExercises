@@ -2,6 +2,15 @@ package model;
 
 public class Ejercicios {
 
+	public void imprimirLista(Node head) {
+		Node temp = head;
+		while (temp != null) {
+			System.out.print(temp.info + " -> ");
+			temp = temp.next;
+		}
+		System.out.println("null");
+	}
+
 	// Ejercicio 1
 	public void ejercicio1() {
 		Node n1 = new Node('1', null);
@@ -47,8 +56,9 @@ public class Ejercicios {
 
 	// Ejercicio 6
 	public void ejercicio6() {
-		Node p = new Node('3', null);
-		p.info = p.next.info; // p toma el valor del siguiente nodo (simulado)
+		Node p = new Node('3', null); // Inicializa p
+		p.next = new Node('4', null); // Asegura que p.next no sea null
+		p.info = p.next.info; // p toma el valor del siguiente nodo
 		System.out.println("Ejercicio 6: p.info = " + p.info);
 	}
 
@@ -139,8 +149,9 @@ public class Ejercicios {
 
 	// Ejercicio 16
 	public void ejercicio16() {
-		Node p = new Node('A', null);
-		p.next = new Node('B', null);
+		Node p = new Node('A', null); // Crea el primer nodo
+		p.next = new Node('B', null); // Segundo nodo
+		p.next.next = new Node('C', null); // Tercer nodo
 		Node q = p;
 		while (q.next != null) {
 			q = q.next;
@@ -214,4 +225,4 @@ public class Ejercicios {
 		p = q; // p ahora es el último nodo, convertido en la cabeza de la lista invertida
 		System.out.println("Ejercicio 20: p.info = " + p.info);
 	}
-}
+}// FINAL CLASS
