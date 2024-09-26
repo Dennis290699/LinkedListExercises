@@ -2,15 +2,6 @@ package model;
 
 public class Ejercicios {
 
-	public void imprimirLista(Node head) {
-		Node temp = head;
-		while (temp != null) {
-			System.out.print(temp.info + " -> ");
-			temp = temp.next;
-		}
-		System.out.println("null");
-	}
-
 	// Ejercicio 1
 	public void ejercicio1() {
 		Node n1 = new Node('1', null);
